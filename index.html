@@ -6,7 +6,12 @@
         <link rel="stylesheet" href="semantic.css">
         <style type="text/css">
 
-        /* your styles go here! */
+            footer  {
+        background-color: yellow;
+        }
+          section2  {
+        background-color: yellow;
+        }
 
         </style>
         <script defer type="text/javascript" src="semantic.js"></script>
@@ -137,37 +142,39 @@
         </div>
         <!-- newsletter section should be set off with a different background color -->
         <!-- contents of the newsletter section should be center aligned -->
-        <section>
-            <h4>Sign up For The Onion’s Newsletter</h4>
-            <p>Give your spam filter something to do.</p>
-            <form action="http://www.email.theonion.com/signuponion/signup.action" method="get">
-                <input type="hidden" name="src" value="theonion.com">
-                <fieldset>
-                    <!-- the two delivery options should sit side by side -->
-                    <label>
-                        <input type="checkbox" value="1" name="listid">
-                        Daily Headlines
-                    </label>
-                    <label>
-                        <input type="checkbox" checked value="2" name="listid">
-                        Weekly Update
-                    </label>
-                </fieldset>
-                <p>
-                    <input type="email" name="email" placeholder="Enter Email Address">
-                    <button type="submit">&gt;</button>
-                </p>
-            </form>
-        </section>
-        <!-- footer should be set off with a different background color than either the articles or the newsletter section -->
-        <!-- contents of the footer should be center aligned -->
-        <footer>
-            <!-- logo should be 50% size -->
-            <p><img src="http://assets3.onionstatic.com/onionstatic/onion/static/images/favicon-120x120.16c4814d4fde.png" alt="The Onion"></p>
-            <p>
-                The Onion is not intended for readers under 18 years of age.<br>
-                &copy; Copyright 2016 Onion Inc. All rights reserved
-            </p>
-        </footer>
+        <div class="ui center aligned container">
+         <section>
+             <h4>Sign up For The Onion’s Newsletter</h4>
+             <p>Give your spam filter something to do.</p>
+             <form action="http://www.email.theonion.com/signuponion/signup.action" method="get">
+                 <input type="hidden" name="src" value="theonion.com">
+                 <fieldset>
+                     <!-- the two delivery options should sit side by side -->
+                     <label>
+                         <input type="checkbox" value="1" name="listid">
+                         Daily Headlines
+                     </label>
+                     <label>
+                         <input type="checkbox" checked value="2" name="listid">
+                         Weekly Update
+                     </label>
+                 </fieldset>
+                 <p>
+                     <input type="email" name="email" placeholder="Enter Email Address">
+                     <button type="submit">&gt;</button>
+                 </p>
+             </form>
+         </section>
+         <!-- footer should be set off with a different background color than either the articles or the newsletter section -->
+         <!-- contents of the footer should be center aligned -->
+         <footer class="ui center aligned container">
+             <!-- logo should be 50% size -->
+             <p><img class="ui tiny centered image" src="http://assets3.onionstatic.com/onionstatic/onion/static/images/favicon-120x120.16c4814d4fde.png" alt="The Onion"></p>
+             <p>
+                 The Onion is not intended for readers under 18 years of age.<br>
+                 &copy; Copyright 2016 Onion Inc. All rights reserved
+             </p>
+         </footer>
+       </div>
     </body>
 </html>
